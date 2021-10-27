@@ -2,7 +2,7 @@
 const arrayNum = [1, 1, 1, 1, 1, 2, 1, 1];
 
 function findUniq(array){
-   let numDif = array.find(function(item){ return array.indexOf(item) == array.lastIndexOf(item) })
+   let numDif = array.find((item) =>{ return array.indexOf(item) == array.lastIndexOf(item) })
       
     console.log(numDif);
 }

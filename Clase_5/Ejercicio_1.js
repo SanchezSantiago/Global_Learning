@@ -3,17 +3,7 @@
 const frutas = ['Manzana','Pera','Banana','Melon','Kiwi'];
 const numeros = [1, 2, 3, 4, 5];
 
-function deleteFirstElement(array){
-    array.shift();
-    console.log(array);
-}
+const deleteFirstElement = (array) => {array.shift(); return array;};
 
-console.log("\t*****Funcion no aplicada*****")
-console.log(frutas);
-console.log(numeros);
-
-
-//Llamado de las funciones
-console.log("\n\t*****Funcion aplicada*****")
-deleteFirstElement(frutas);
-deleteFirstElement(numeros);
+console.log(deleteFirstElement(frutas));
+console.log(deleteFirstElement(numeros));

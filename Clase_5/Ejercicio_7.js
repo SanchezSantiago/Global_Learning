@@ -5,7 +5,7 @@ function adjacentElementsProduct(array){
   
     let maxProduct = 0, product = 0;
     
-    array.forEach(function(item, i){
+    array.forEach((item, i)=>{
         
         product = array[i] * array[i + 1];
 

@@ -2,9 +2,9 @@
 const numeros = [7, 4, 2, 3];
 
 function minSum(array){
-    array.sort(function(a,b){ return a - b});
+    array.sort((a,b) => { return a - b});
     let sumMin = Infinity, suma = 0;
-    array.forEach(function(item, i){
+    array.forEach((item, i) =>{
         suma = array[i] + array[i + 1]
         if(suma < sumMin){
             sumMin = suma;
