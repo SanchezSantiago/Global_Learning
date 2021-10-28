@@ -6,14 +6,10 @@ const list1 = [
     { firstName: 'Madison', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' } 
   ];
 
-function greeting(array){
-    array.forEach(function(item, i){
-        array[i].greeting = `Hi, ${array[i].firstName}, what do you like the most about ${array[i].language}?`;
-    });
+const greeting = (array)=>{
+    array.forEach((item, i)=>{ array[i].greeting = `Hi, ${array[i].firstName}, what do you like the most about ${array[i].language}?`;});
     return array;
 }
-
-
 console.log(greeting(list1));
 
 

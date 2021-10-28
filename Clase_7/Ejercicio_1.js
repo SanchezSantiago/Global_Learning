@@ -7,7 +7,7 @@ class Hero{
     damage
     exp
 
-    constructor(name, position, life, damage, exp){
+    constructor(name){
         this.name = name || 'Heroe';
         this.position = '00';
         this.life = 100;

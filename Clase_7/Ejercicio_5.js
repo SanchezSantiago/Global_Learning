@@ -17,10 +17,8 @@ function whichCountryAndLanguage(language){
 }
 
 
-
-
 whichCountryAndLanguage('Python');
-whichCountryAndLanguage('C#')
+whichCountryAndLanguage('C#');
 
 
 

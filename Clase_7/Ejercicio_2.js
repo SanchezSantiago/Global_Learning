@@ -7,9 +7,7 @@ const list = [
     { firstName: 'Ramiro', country: 'Tajikistan', continent: 'Asia', age: 30, language: 'CSS' }
   ];
   var count = 0;
-  
-    list.forEach(function(item, i){
-      
+    list.forEach((item, i)=>{
         if(list[i].continent == 'Europe'){
             count++;
         }

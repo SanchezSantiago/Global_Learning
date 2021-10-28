@@ -7,15 +7,12 @@ const list = [
   ];
 
   function thereIsLanguage(language){
-    const value = list.some(function(item, i){ return list[i].language == language})
+    const value = list.some((item, i) => { return list[i].language == language})
     console.log(value);
     }
-
-    
-  
     thereIsLanguage('Ruby');
 
-
+    //INPUT
     /*thereIsLanguage('JavaScript'); -> true
     thereIsLanguage('Python'); -> false
     */
