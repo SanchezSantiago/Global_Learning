@@ -14,49 +14,43 @@ body{
 #div-image{
 	margin: 0;
 	width: 150px;
-	height: 150px;
-
 }
 
 #image{
 	max-width: 100%;
-	height: auto;
-	margin: 0 auto;
 }
 
 a{
 	text-decoration: none;
+	color: black;
 }
 
 
 #title{
-	margin-top: 70px;
+	display: flex;
+	margin: 70px 0 0 0; 
 	color: #ffffff;
 	font-family: 'Bebas Neue', cursive;
-	font-size: 50px;
+	font-size: 46px;
 }
 
-
 #nav-bar{
-	margin-top: 81px;
-	margin-right: 5px;
 	display: flex;
-	flex: 1 0 30%;
+	height: 49px;
+	flex: 1 0 33%;
 	justify-content: flex-end;
-	height: 50px;
-	
+	margin-top: 81px;
 }
 #nav-ul{
   list-style-type: none;
+  height: auto;
+  background-color: white;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: white;
 }
 
 #nav-li{
   display: inline-block;
- 
 }
 
 #nav-li a{
@@ -64,7 +58,7 @@ a{
 	text-decoration: none;
 	text-align: center;
 	color: black;
-	padding: 14px 16px;
+	padding: 14px 18px;
 	transition: 0.3s;
 }
 
@@ -78,3 +72,23 @@ a{
 }
 
 
+.post{
+	text-align: center;
+	background-color: lightslategray;
+	width: 50%;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+
+.post:hover{
+	background-color: gray;
+}
+
+
+#footer{
+	background-color: black;
+	color: white;
+	margin-top: 50px;
+}
