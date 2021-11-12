@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Import CSS-->
     <link rel="stylesheet" type="text/CSS" href="style.css">
+
     <!--Import Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!--Import Font-Awesome-->
+    <script src="https://kit.fontawesome.com/d3465a5905.js" crossorigin="anonymous"></script>
 
     <title>Pagina para mostrar</title>
 </head>
@@ -29,22 +34,28 @@
 
 </header>
 <main id="main">
+    <!------------------------PRODUCTS-PREVIEW------------------------->
     <section id="products">
   
     <h1>Productos que la estan rompiendo</h1>
+    <h2>Envio gratis para los siguientes productos mostrados</h2>
   
-    <div class="container-products">
+    <div class="products-container">
+
     <div class="product-preview">
-    <img src="images/product1.jpg" class="product-img">
+    <img src="images/product1.jpg" class="product-img" alt="Redragon K552 KUMARA QWERTY Cherry MX Blue">
         <p class="product-preview-title">Redragon K552 KUMARA QWERTY Cherry MX Blue</p>
         <p class="product-preview-price">$6659</p>
         <ul class="product-preview-list">
+
             <li>
                 <p>Mecanico</p>
             </li>
+
             <li>
                 <p>Inalambrico: No</p>
             </li>
+
             <li>
                 <p>Tipo de switch: Cherry MX Blue</p>
             </li>
@@ -53,7 +64,8 @@
     </div>
 
     <div class="product-preview">
-    <img src="images/product2.jpg" class="product-img">
+
+    <img src="images/product2.jpg" class="product-img" alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
         <p class="product-preview-title">Mouse Gamer Redragon Cobra M711FPS King Cobra</p>
         <p class="product-preview-price">$3609</p>
         <ul class="product-preview-list">
@@ -71,16 +83,20 @@
     </div>
 
     <div class="product-preview">
-    <img src="images/product3.jpg" class="product-img">
+
+    <img src="images/product3.jpg" class="product-img" alt="Headset Redragon Lamia 7.1 Virtual RGB - H320RGB">
         <p class="product-preview-title">Headset Redragon Lamia 7.1 Virtual RGB - H320RGB</p>
         <p class="product-preview-price">$5709</p>
         <ul class="product-preview-list">
+
             <li>
                 <p>Inalambrico: Si</p>
             </li>
+
             <li>
                 <p>Microfono: Si</p>
             </li>
+
             <li>
                 <p >Retroiluminación: Anillo RGB</p>
             </li>
@@ -88,8 +104,35 @@
         <button class="btn-buy">Comprar!</button>
     </div>
 </div>  
-    <p id="more-products-p">Mas productos en nuestro <a href="">catalogo</a></p>
-</section>
+    <p class="more-information">Mas productos en nuestro <a href="">catalogo</a></p>
+    </section>
+
+         <!----------------------SHIPPING-------------------------->
+
+    <section id="shipping">
+    <h2 id="shipping-h2">About shipping products</h2>
+        <div class="shipping-container">
+            <div class="shipping-icon"><i class="fas fa-shopping-cart fa-4x"></i></div>
+            <div class="shipping-desc">
+                <h3>Add your products to the cart </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laboriosam, impedit illo po</p>
+            </div>
+        </div>
+        <div class="shipping-container">
+            <div class="shipping-icon"><i class="fas fa-dolly-flatbed fa-4x"></i></div>
+            <div class="shipping-desc">
+                <h3>Add your products to the cart </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laboriosam, impedit illo po</p>
+            </div>
+        </div>
+            <div class="shipping-container">
+            <div class="shipping-icon"><i class="fas fa-shipping-fast fa-4x"></i></div>
+            <div class="shipping-desc">
+                <h3>Add your products to the cart </h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi laboriosam, impedit illo po</p>
+            </div>
+        </div>
+    </section>
     
     <footer></footer>
 </main>
