@@ -72,32 +72,22 @@ li{
     text-align: center;
 }
 #main-page-title{
-    margin: 2em;
+    margin: 1em 4em;
     border-radius: 10px;
-    animation-name: animation-title;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    font-size: 35px;
+    transition: 0.3s;
+}
+#main-page-title:hover{
+    font-style: italic;
+    background-color: black;
+    color: white;
 }
 
 
 
 /*-----COVER-PAGE-SECTION-----*/
 
-@keyframes animation-title {
-    0%{
-        background-color: black;
-        color: white;
-    }
-    50%{
-        background-color: white;
-        color: black; 
-    }
-    100%{
-        background-color: black;
-        color: white;
-    }
-    
-}
+
 
 #container-cover-page{
     border: 3px black solid;
