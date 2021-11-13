@@ -8,6 +8,11 @@
 
 a{
     text-decoration: none;
+    color: white;
+}
+input, button{
+    font-family: inherit;
+    text-align: center;
 }
 
 /*----HEADER-----*/
@@ -73,6 +78,8 @@ li{
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
+
+
 
 /*-----COVER-PAGE-SECTION-----*/
 
@@ -159,7 +166,6 @@ li{
     list-style: disc;
 }
 .btn-buy{
-    font-family : inherit;
     font-size: 1em;
     margin-top: 10px;
     width: 100%;
@@ -213,28 +219,34 @@ li{
     width: 70vw;
 
 }
+/*------EMAIL-SUBSCRIPTION------*/
 
+#email-input-container{
+    margin: 4em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 4em 8em 0;
+}
+#email-label{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 
+#email{
+    display: block;
+    width: 18em;
+    padding: 0.50em;
+    border-radius: 10px;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#submit{
+    cursor: pointer;
+    width: 15em;
+    padding: 0.50em;
+    margin-top: 1em;
+}
 
 
 
@@ -242,5 +254,17 @@ li{
 
 /*--------FOOTER----------*/
 footer{
-    margin-top: 500px;
+    margin-top: 5em;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#social-media-footer{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon{
+    margin: 0.50em;
 }
