@@ -81,6 +81,7 @@ li{
     font-style: italic;
     background-color: black;
     color: white;
+    cursor: default;
 }
 
 
@@ -90,12 +91,10 @@ li{
 
 
 #container-cover-page{
-    border: 3px black solid;
-    border-radius: 10px;
+
     margin: 0 5em 2em;
     padding: 10px;
-    box-shadow: 0 5px 10px black;
-    background: linear-gradient(360deg,red,black);
+
    
     
 }
@@ -104,6 +103,7 @@ li{
     height: 30em;
     border-radius: 5px;
     border: 2px black solid;
+    box-shadow: 0 5px 10px black;
 }
 
 /*-----PRODUCT-PREVIEW-SECTION-----*/
@@ -212,11 +212,12 @@ li{
 /*------EMAIL-SUBSCRIPTION------*/
 
 #email-input-container{
-    margin: 4em;
+    border: 3px black dashed;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 4em 8em 0;
+    margin: 4em 15em 0;
 }
 #email-label{
     font-size: 25px;
@@ -232,10 +233,11 @@ li{
 }
 
 #submit{
+    border-radius: 8px;
     cursor: pointer;
     width: 15em;
     padding: 0.50em;
-    margin-top: 1em;
+    margin: 1em;
 }
 
 
