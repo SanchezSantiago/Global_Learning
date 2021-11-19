@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
 
     <!--Import CSS-->
-        <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="catalogo.css">
 
     <!--Import Font-Awesome-->
     <script src="https://kit.fontawesome.com/d3465a5905.js" crossorigin="anonymous"></script>
@@ -16,11 +17,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
     <title>Document</title>
 
 </head>
+
 <body>
     <header id="header">
         <div id="logo">
@@ -30,181 +33,250 @@
             <input type="text" id="buscador" placeholder="Buscar productos...">
             <button id="btn-search"><i class="fas fa-search"></i></button>
         </form>
-       
-    <nav id="nav-bar">
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li><a href="contacto.html" class="nav-link">Contáctenos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <nav id="left-menu">
+
+        <header>Categorias</header>
         <ul>
-            <li ><a href="index.html" class="nav-link">Inicio</a></li>
-            <li ><a href="catalogo.html" class="nav-link">Catálogo</a></li>
-            <li ><a href="contactenos.html" class="nav-link">Contáctenos</a></li>
+            <li><a href="#mouse">Mouses</a></li>
+            <li><a href="#keyboard">Teclados</a></li>
+            <li><a href="#headset">Auriculares</a></li>
         </ul>
     </nav>
 
-    </header>
-    <main id="main">
- 
-        <div id="left-menu">
-            
-            <header>Categorias</header>
-            <ul>
-                <li><a href="#mouse">Mouses</a></li>
-                <li><a href="#keyboard">Teclados</a></li>
-                <li><a href="#headset">Auriculares</a></li>
-            </ul>
-        </div>
-    <div id="section-container">
+    <main id="main-page">
 
         <!-------- MOUSES --------->
+        <section id="mouse">
+            <header>Mouses</header>
 
-        <section id="mouse"><header>Mouses</header>
-            
             <div class="products-container">
 
                 <div class="product text-align">
-                    <img src="images/catalogo-images/product-mouse-1.jpg" class="product-img" alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
+                    <img src="images/catalogo-images/product-mouse-1.jpg" class="product-img"
+                        alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
                     <p class="title">Mouse Gamer Redragon Cobra M711FPS King Cobra</p>
                     <p class="price">$3609</p>
-                        <ul class="features">
-                           <li>
-                                <p>Inalámbrico: No</p>
-                            </li>
-                            <li>
-                                <p>24000 dpi</p>
-                            </li>
-                            <li>
-                                <p>Tipo de sensor: Óptico</p>
-                            </li>
-                        </ul>  
-                    <button class="btn-buy" data-order="Redragon-Cobra-M711FPS">Añadir al carrito!</button>    
+                    <ul class="features">
+                        <li>
+                            <p>Inalámbrico: No</p>
+                        </li>
+                        <li>
+                            <p>24000 dpi</p>
+                        </li>
+                        <li>
+                            <p>Tipo de sensor: Óptico</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy" data-order="Redragon-Cobra-M711FPS">Añadir al carrito!</button>
                 </div>
 
+
                 <div class="product text-align">
-                    <img src="images/catalogo-images/product-mouse-2.jpg" class="product-img" alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
+                    <img src="images/catalogo-images/product-mouse-2.jpg" class="product-img"
+                        alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
                     <p class="title">Mouse Gamer Redragon Cobra M711FPS King Cobra</p>
                     <p class="price">$3609</p>
-                        <ul class="features">
-                           <li>
-                                <p>Inalámbrico: No</p>
-                            </li>
-                            <li>
-                                <p>24000 dpi</p>
-                            </li>
-                            <li>
-                                <p>Tipo de sensor: Óptico</p>
-                            </li>
-                        </ul>  
-                    <button class="btn-buy">Añadir al carrito!</button>    
+                    <ul class="features">
+                        <li>
+                            <p>Inalámbrico: No</p>
+                        </li>
+                        <li>
+                            <p>24000 dpi</p>
+                        </li>
+                        <li>
+                            <p>Tipo de sensor: Óptico</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy">Añadir al carrito!</button>
                 </div>
 
+
                 <div class="product text-align">
-                    <img src="images/catalogo-images/product-mouse-3.png" class="product-img" alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
+                    <img src="images/catalogo-images/product-mouse-3.png" class="product-img"
+                        alt="Mouse Gamer Redragon Cobra M711FPS King Cobra">
                     <p class="title">Mouse Gamer Redragon M908 Impact 1 RGB</p>
                     <p class="price">$3609</p>
-                        <ul class="features">
-                           <li>
-                                <p>Inalámbrico: No</p>
-                            </li>
-                            <li>
-                                <p>24000 dpi</p>
-                            </li>
-                            <li>
-                                <p>Tipo de sensor: Óptico</p>
-                            </li>
-                        </ul>  
-                    <button class="btn-buy">Añadir al carrito!</button>    
-               </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    <ul class="features">
+                        <li>
+                            <p>Inalámbrico: No</p>
+                        </li>
+                        <li>
+                            <p>24000 dpi</p>
+                        </li>
+                        <li>
+                            <p>Tipo de sensor: Óptico</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy">Añadir al carrito!</button>
+                </div>
 
 
             </div>
+
         </section>
 
         <!-------- TECLADOS ------->
-        <section id="keyboard"><header>Teclados</header>
+        <section id="keyboard">
+            <header>Teclados</header>
+
             <div class="products-container">
 
                 <div class="product text-align">
-                    <img src="images/catalogo-images/product-keyboard-1.jpg" class="product-img" alt="Redragon K552 KUMARA QWERTY Cherry MX Blue">
+                    <img src="images/catalogo-images/product-keyboard-1.jpg" class="product-img"
+                        alt="Redragon K552 KUMARA QWERTY Cherry MX Blue">
                     <p class="title">Redragon K552 KUMARA QWERTY Cherry MX Blue RGB</p>
                     <p class="price">$6659</p>
-                        <ul class="features">
-                            <li>
-                                <p>Mecánico</p>
-                            </li>
-                
-                            <li>
-                                <p>Inalámbrico: No</p>
-                            </li>
-                
-                            <li>
-                                <p>Tipo de switch: Cherry MX Blue</p>
-                            </li>
-                        </ul>  
-                    <button class="btn-buy">Añadir al carrito!</button>    
+                    <ul class="features">
+                        <li>
+                            <p>Mecánico</p>
+                        </li>
+
+                        <li>
+                            <p>Inalámbrico: No</p>
+                        </li>
+
+                        <li>
+                            <p>Tipo de switch: Cherry MX Blue</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy">Añadir al carrito!</button>
                 </div>
 
                 <div class="product text-align">
-                    <img src="images/catalogo-images/product-keyboard-2.jpg" class="product-img" alt="Teclado Redragon DRACONIC K530 60% RGB">
+                    <img src="images/catalogo-images/product-keyboard-2.jpg" class="product-img"
+                        alt="Teclado Redragon DRACONIC K530 60% RGB">
                     <p class="title">Teclado Redragon DRACONIC K530 60% RGB</p>
                     <p class="price">$5500</p>
-                        <ul class="features">
-                            <li>
-                                <p>Mecánico</p>
-                            </li>
-                
-                            <li>
-                                <p>Inalámbrico: No</p>
-                            </li>
-                
-                            <li>
-                                <p>Tipo de switch: Outemu MK2 Brown</p>
-                            </li>
-                        </ul>  
-                    <button class="btn-buy">Añadir al carrito!</button>    
+                    <ul class="features">
+                        <li>
+                            <p>Mecánico</p>
+                        </li>
+
+                        <li>
+                            <p>Inalámbrico: No</p>
+                        </li>
+
+                        <li>
+                            <p>Tipo de switch: Outemu MK2 Brown</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy">Añadir al carrito!</button>
                 </div>
 
                 <div class="product text-align">
-                    <img src="images/catalogo-images/product-keyboard-3.jpg" class="product-img" alt="Teclado Redragon DRACONIC K530 60% RGB">
+                    <img src="images/catalogo-images/product-keyboard-3.jpg" class="product-img"
+                        alt="Teclado Redragon DRACONIC K530 60% RGB">
                     <p class="title">Teclado REDRAGON VISNU K561 ESPAÑOL RAINBOW RGB</p>
                     <p class="price">$5500</p>
-                        <ul class="features">
-                            <li>
-                                <p>Mecánico</p>
-                            </li>
-                
-                            <li>
-                                <p>Inalámbrico: No</p>
-                            </li>
-                
-                            <li>
-                                <p>Tipo de switch: Outemu MK2 Brown</p>
-                            </li>
-                        </ul>  
-                    <button class="btn-buy">Añadir al carrito!</button> 
+                    <ul class="features">
+                        <li>
+                            <p>Mecánico</p>
+                        </li>
 
+                        <li>
+                            <p>Inalámbrico: No</p>
+                        </li>
 
-
-
-
+                        <li>
+                            <p>Tipo de switch: Outemu MK2 Brown</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy">Añadir al carrito!</button>
+                </div>
 
         </section>
 
         <!-------- HEADSET -------->
-        <section id="headset"></section>
+        <section id="headset">
+            <header>Headset</header>
+            
+            <div class="products-container">
 
-    </div>
+                <div class="product text-align">
+                    <img src="images/catalogo-images/product-headset-1.jpg" class="product-img"
+                        alt="Headset Redragon-Lamia-H320RGB">
+
+                    <p class="title">Headset Redragon Lamia 7.1 Virtual RGB - H320RGB</p>
+                    <p class="price">$5709</p>
+                    <ul class="features">
+
+                        <li>
+                            <p>Inalámbrico: Si</p>
+                        </li>
+
+                        <li>
+                            <p>Micrófono: Si</p>
+                        </li>
+
+                        <li>
+                            <p>Retroiluminación: Anillo RGB</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy" data-order="Redragon-Lamia-H320RGB">Añadir al carrito!</button>
+                </div>
+
+                <div class="product text-align">
+                    <img src="images/catalogo-images/product-headset-2.png" class="product-img"
+                        alt="Headset Redragon-Lamia-H320RGB">
+
+                    <p class="title">Auriculares Gamer Redragon Ares H120 Headset</p>
+                    <p class="price">$5709</p>
+                    <ul class="features">
+
+                        <li>
+                            <p>Inalámbrico: Si</p>
+                        </li>
+                        <li>
+                            <p>Micrófono: Si</p>
+                        </li>
+                        <li>
+                            <p>Retroiluminación: Anillo RGB</p>
+                        </li>
+
+                    </ul>
+                    <button class="btn-buy" data-order="Redragon-Lamia-H320RGB">Añadir al carrito!</button>
+                </div>
+
+                <div class="product text-align">
+                    <img src="images/catalogo-images/product-headset-3.jpg" class="product-img"
+                        alt="Headset Redragon-Lamia-H320RGB">
+
+                    <p class="title">Redragon H230 Ajax RGB Wired Gaming Headset Dynamic RGB Backlight</p>
+                    <p class="price">$5709</p>
+                    <ul class="features">
+
+                        <li>
+                            <p>Inalámbrico: Si</p>
+                        </li>
+
+                        <li>
+                            <p>Micrófono: Si</p>
+                        </li>
+
+                        <li>
+                            <p>Retroiluminación: Anillo RGB</p>
+                        </li>
+                    </ul>
+                    <button class="btn-buy" data-order="Redragon-Lamia-H320RGB">Añadir al carrito!</button>
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
 </body>
+
 </html>
