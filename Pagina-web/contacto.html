@@ -29,8 +29,8 @@
         <div id="logo">
             <a href="index.html"><img src="Images/logo.png" id="header-img"></a>
         </div>
-        <form action="" id="buscador-container">
-            <input type="text" id="buscador" placeholder="Buscar productos...">
+        <form action="" id="search-bar">
+            <input type="text" id="search" placeholder="Buscar productos...">
             <button id="btn-search"><i class="fas fa-search"></i></button>
         </form>
 
@@ -43,8 +43,141 @@
         </nav>
 
     </header>
+    <main id="main">
+        <h1 class="text-align">Estamos para responder tus dudas</h1>
+
+        <div id="select-container">
+            <h2>Consultas frecuentes</h2>
+            <select name="consulta-frecuentes">
+                <option disabled selected value>Consultas frecuentes</option>
+                <option value="Lorem">Lorem</option>
+                <option value="Lorem">Lorem</option>
+                <option value="Lorem">Lorem</option>
+                <option value="Lorem">Lorem</option>
+                <option value="Lorem">Enviar una consulta</option>
+            </select>
+        </div>
+
+        <section id="section-consultas-frecuentes">
+            <article>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
+                    expedita
+                    libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
+                    tempore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repellat qui error
+                    tempore.
+                    Aliquam consequatur quia, commodi maiores optio maxime vel, obcaecati sapiente fuga nostrum animi,
+                    corrupti odit quidem voluptas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia ex, consectetur rerum,
+                    magnam
+                    saepe iusto dolorum cum ea, nisi fugiat facere? Excepturi perferendis aut dolorem repellat expedita,
+                    quae placeat.</p>
+            </article>
+
+            <article>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
+                    expedita
+                    libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
+                    tempore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repellat qui error
+                    tempore.
+                    Aliquam consequatur quia, commodi maiores optio maxime vel, obcaecati sapiente fuga nostrum animi,
+                    corrupti odit quidem voluptas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia ex, consectetur rerum,
+                    magnam
+                    saepe iusto dolorum cum ea, nisi fugiat facere? Excepturi perferendis aut dolorem repellat expedita,
+                    quae placeat.</p>
+            </article>
+
+            <article>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
+                    expedita
+                    libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
+                    tempore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repellat qui error
+                    tempore.
+                    Aliquam consequatur quia, commodi maiores optio maxime vel, obcaecati sapiente fuga nostrum animi,
+                    corrupti odit quidem voluptas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia ex, consectetur rerum,
+                    magnam
+                    saepe iusto dolorum cum ea, nisi fugiat facere? Excepturi perferendis aut dolorem repellat expedita,
+                    quae placeat.</p>
+            </article>
+
+            <article>
+                <h3>Lorem</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
+                    expedita
+                    libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
+                    tempore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repellat qui error
+                    tempore.
+                    Aliquam consequatur quia, commodi maiores optio maxime vel, obcaecati sapiente fuga nostrum animi,
+                    corrupti odit quidem voluptas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia ex, consectetur rerum,
+                    magnam
+                    saepe iusto dolorum cum ea, nisi fugiat facere? Excepturi perferendis aut dolorem repellat expedita,
+                    quae placeat.</p>
+            </article>
+
+            <article id="caca">
+                <h3>Lorem</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
+                    expedita
+                    libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
+                    tempore! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas repellat qui error
+                    tempore.
+                    Aliquam consequatur quia, commodi maiores optio maxime vel, obcaecati sapiente fuga nostrum animi,
+                    corrupti odit quidem voluptas.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae mollitia ex, consectetur rerum,
+                    magnam
+                    saepe iusto dolorum cum ea, nisi fugiat facere? Excepturi perferendis aut dolorem repellat expedita,
+                    quae placeat.</p>
+            </article>
+        </section>
+
+        <form action="" method="post" id="enviar-consulta">
+            <h2 class="text-align">Envianos tu consulta</h2>
+            <div class="form-group">
+                <label for="fname">Ingresá tu nombre</label>
+                <input type="text" id="fname" placeholder="Ingresá tu nombre" required class="consulta-input">
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Ingresá tu apellido</label>
+                <input type="text" id="fname" placeholder="Ingresá tu apellido" required class="consulta-input">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Ingresá tu email</label>
+                <input type="email" name="email" id="email" placeholder="Ingresá tu email" required
+                    class="consulta-input">
+            </div>
+
+            <div class="form-group">
+                <p>Contanos tu consulta</p>
+                <textarea id="comments" class="consulta-input input-text-area" name="comment"
+                    placeholder="Ingresá tu consulta..." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Enviar!</button>
+            </div>
+
+        </form>
+    </main>
 
 
+    <footer>
+        <p class="text-align">Seguinos en nuestras redes sociales!</p>
+        <div id="social-media-footer">
+            <a href=""><i class="fab fa-facebook fa-2x footer-icon"></i></a>
+            <a href=""><i class="fab fa-instagram fa-2x footer-icon"></i></a>
+            <a href=""><i class="fab fa-twitter fa-2x footer-icon"></i></a>
+            <a href="https://github.com/SkeletorSanchez" target="_blank"><i
+                    class="fab fa-github fa-2x footer-icon"></i></a>
+        </div>
+        <p class="text-align">Por: Santiago Sanchez Nieva</p>
+    </footer>
 </body>
 
 </html>

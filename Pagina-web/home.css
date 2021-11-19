@@ -65,12 +65,12 @@ li {
     color: white;
 }
 
-#buscador-container {
+#search-bar {
     display: flex;
     width: 100%;
 }
 
-#buscador {
+#search {
     width: 100%;
     height: 2em;
 }
@@ -132,15 +132,15 @@ li {
 }
 
 /*-----PRODUCT-PREVIEW-SECTION-----*/
-#mostSelled {
+#most-selled {
     margin-bottom: 3em;
 }
 
-#mostSelled>h2 {
+#most-selled>h2 {
     font-size: 40px;
 }
 
-#mostSelled>h3 {
+#most-selled>h3 {
     text-decoration: underline;
     font-style: italic;
 }
