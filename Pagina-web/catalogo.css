@@ -188,9 +188,13 @@ section>header {
 .features {
     margin-top: 5px;
 }
+.features>ul{
+    padding: 0;
+}
 
 .features>li {
-    list-style: disc;
+    width: 100%;
+    word-wrap: break-word;
 }
 
 .btn-buy {

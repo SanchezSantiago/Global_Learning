@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import the icon-->
+    <link rel="icon" type="image/png" href="images/icon.png">
 
     <!-- Import CSS -->
-    <link rel="stylesheet" href="contacto.CSS">
+    <link rel="stylesheet" href="soporte.CSS">
 
     <!--Import Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +23,7 @@
     <script src="https://kit.fontawesome.com/d3465a5905.js" crossorigin="anonymous"></script>
 
 
-    <title>Document</title>
+    <title>Gamer's Armory!</title>
 </head>
 
 <body>
@@ -38,7 +40,7 @@
             <ul>
                 <li><a href="index.html" class="nav-link">Inicio</a></li>
                 <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
-                <li><a href="contacto.html" class="nav-link">Contáctenos</a></li>
+                <li><a href="soporte.html" class="nav-link">Soporte</a></li>
             </ul>
         </nav>
 
@@ -47,20 +49,22 @@
         <h1 class="text-align">Estamos para responder tus dudas</h1>
 
         <div id="select-container">
-            <h2>Consultas frecuentes</h2>
-            <select name="consulta-frecuentes">
-                <option disabled selected value>Consultas frecuentes</option>
-                <option value="Lorem">Lorem</option>
-                <option value="Lorem">Lorem</option>
-                <option value="Lorem">Lorem</option>
-                <option value="Lorem">Lorem</option>
-                <option value="Lorem">Enviar una consulta</option>
+            <h2>Preguntas frecuentes</h2>
+            <select
+                onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                <option disabled selected value>Preguntas frecuentes...</option>
+                <option value="#lorem1">¿Lorem1?</option>
+                <option value="#lorem2">¿Lorem2?</option>
+                <option value="#lorem3">¿Lorem3?</option>
+                <option value="#lorem4">¿Lorem4?</option>
+                <option value="#lorem5">¿Lorem5?</option>
+                <option value="#enviar-consulta">Enviar consulta</option>
             </select>
         </div>
 
         <section id="section-consultas-frecuentes">
-            <article>
-                <h3>Lorem</h3>
+            <article id="lorem1">
+                <h3>Lorem1</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
                     expedita
                     libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
@@ -74,8 +78,8 @@
                     quae placeat.</p>
             </article>
 
-            <article>
-                <h3>Lorem</h3>
+            <article id="lorem2">
+                <h3>Lorem2</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
                     expedita
                     libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
@@ -89,8 +93,8 @@
                     quae placeat.</p>
             </article>
 
-            <article>
-                <h3>Lorem</h3>
+            <article id="lorem3">
+                <h3>Lorem3</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
                     expedita
                     libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
@@ -104,8 +108,8 @@
                     quae placeat.</p>
             </article>
 
-            <article>
-                <h3>Lorem</h3>
+            <article id="lorem4">
+                <h3>Lorem4</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
                     expedita
                     libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
@@ -119,8 +123,8 @@
                     quae placeat.</p>
             </article>
 
-            <article id="caca">
-                <h3>Lorem</h3>
+            <article id="lorem5">
+                <h3>Lorem5</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, enim odit eligendi quam fuga vitae
                     expedita
                     libero tempore, adipisci qui fugiat, magni voluptas dicta optio! Provident pariatur vero ducimus
@@ -135,16 +139,18 @@
             </article>
         </section>
 
-        <form action="" method="post" id="enviar-consulta">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="enviar-consulta">
             <h2 class="text-align">Envianos tu consulta</h2>
             <div class="form-group">
-                <label for="fname">Ingresá tu nombre</label>
-                <input type="text" id="fname" placeholder="Ingresá tu nombre" required class="consulta-input">
+                <label for="first-name">Ingresá tu nombre</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Ingresá tu nombre" required
+                    class="consulta-input">
             </div>
 
             <div class="form-group">
-                <label for="lname">Ingresá tu apellido</label>
-                <input type="text" id="fname" placeholder="Ingresá tu apellido" required class="consulta-input">
+                <label for="last-name">Ingresá tu apellido</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Ingresá tu apellido" required
+                    class="consulta-input">
             </div>
 
             <div class="form-group">
@@ -155,7 +161,7 @@
 
             <div class="form-group">
                 <p>Contanos tu consulta</p>
-                <textarea id="comments" class="consulta-input input-text-area" name="comment"
+                <textarea id="consult" class="consulta-input input-text-area" name="comment"
                     placeholder="Ingresá tu consulta..." required></textarea>
             </div>
 
@@ -179,5 +185,4 @@
         <p class="text-align">Por: Santiago Sanchez Nieva</p>
     </footer>
 </body>
-
 </html>

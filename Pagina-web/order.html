@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import the icon-->
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="order.css">
+
+    <!--Import Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+
+    <!--Import Font-Awesome-->
+    <script src="https://kit.fontawesome.com/d3465a5905.js" crossorigin="anonymous"></script>
+
+
+    <title>Gamer's Armory!</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="logo">
+            <a href="index.html"><img src="Images/logo.png" id="header-img"></a>
+        </div>
+        <form action="" id="search-bar">
+            <input type="text" id="search" placeholder="Buscar productos...">
+            <button id="btn-search"><i class="fas fa-search"></i></button>
+        </form>
+
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li><a href="soporte.html" class="nav-link">Soporte</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="main">
+        <h1 class="text-align">Orden de compra</h1>
+
+        <div class="product-selected">
+            <img src="" class="product-img">
+            <p class="title"></p>
+            <p class="price"></p>
+        </div>
+
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="form-order">
+            <div class="form-group">
+                <label for="first-name">Nombre </label>
+                <input type="text" name="first-name" id="first-name" required>
+
+                <label for="last-name">Apellido </label>
+                <input type="text" name="last-name" id="first-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Pais </label>
+                <select name="country" id="country">
+                    <option disabled selected value>Selecciona tu pais...</option>
+                    <option value="Argentina">Argentina</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="province">Provincia </label>
+                <select name="province" id="province" required>
+                    <option disabled selected value>Selecciona tu provincia...</option>
+                    <option value="Tucuman">Tucuman</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Direccion</label>
+                <input type="text" name="Address" id="address" required>
+            </div>
+
+            <div class="form-group">
+                <label><input type="radio" name="departament" value="No" class="input-checkbox" id="no"> No vivo
+                    en departamento</label>
+                <label><input type="radio" name="departament" value="Yes" class="input-checkbox" id="yes"> Vivo en
+                    departamento</label>
+            </div>
+
+            <div class="form-group" id="department">
+                <label for="departament">Depto/piso </label>
+                <input type="number" min=0 max=99 name="departament-floor">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Celular/Telefono</label>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <!--With the "display: none;" the user cant change the value of the input-->
+            <div class="form-group" style="display: none;">
+                <label for="product">Producto </label>
+                <input type="text" name="product" id="product-name">
+            </div>
+            <div class="form-group">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p class="text-align">Seguinos en nuestras redes sociales!</p>
+        <div id="social-media-footer">
+            <a href=""><i class="fab fa-facebook fa-2x footer-icon"></i></a>
+            <a href=""><i class="fab fa-instagram fa-2x footer-icon"></i></a>
+            <a href=""><i class="fab fa-twitter fa-2x footer-icon"></i></a>
+            <a href="https://github.com/SkeletorSanchez" target="_blank"><i
+                    class="fab fa-github fa-2x footer-icon"></i></a>
+        </div>
+        <p class="text-align">Por: Santiago Sanchez Nieva</p>
+    </footer>
+
+</body>
+
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const order = localStorage.getItem("order");
+        if (order) {
+            const catalogOrder = JSON.parse(order);
+            const productSelected = document.querySelector(".product-selected");
+
+            productSelected.querySelector(".title").innerText = catalogOrder.title;
+            productSelected.querySelector(".price").innerText = catalogOrder.price;
+
+            //Gets the product name(catalogOrder.title) and puts it in the input value
+            const articleName = document.getElementById('product-name').value = catalogOrder.title;
+
+            const image = productSelected.querySelector("img");
+            image.setAttribute("src", `images/catalogo-images/${catalogOrder.id}.jpg`);
+
+        }
+    })
+    //If user check yes, the input displays, else no
+        const checkNo = document.getElementById('no');
+        const checkYes = document.getElementById('yes');
+        const departament = document.getElementById('department');
+        checkNo.onclick = () => {
+            departament.setAttribute('style', 'display: none;');
+        }
+        checkYes.onclick = () => {
+            departament.setAttribute('style', 'display: flex;');
+        }
+</script>
+
+</html>
